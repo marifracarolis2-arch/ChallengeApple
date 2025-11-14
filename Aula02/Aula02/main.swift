@@ -88,3 +88,26 @@ func inventarioArtefatos(){
     }
 }
 // para funcionar chame a função inventarioArtefatos()
+
+func dueloElemental() {
+    let vantagens = [
+        "Pyro" : "Cryo" ,
+        "Hydro" : "Pyro" ,
+        "Electro" : "Hydro" ,
+        "Cryo" : "Electro"
+    ]
+    
+    let inimigos = ["Pyro" , "Hydro" , "Electro" , "Cryo"]
+    let inimigo = inimigos.randomElement() ?? "Pyro"
+    print("Seu elemento é Pyro, Hydro, Electro ou Cryo?")
+    let seu = (readLine() ?? "Pyro").capitalized
+    print("Uma criatura \(inimigo) apareceu!!!")
+    if vantagens[seu] == inimigo {
+        print("Vantagem elemental!!! Você causou dano dobrado.")
+    } else if vantagens[inimigo] == seu {
+        print("Desvantagem elemental!!! Seu dano foi reduzido")
+    } else {
+        print("Dano neutro, tente novamente!")
+    }
+}
+// para funcionar chame a função dueloElemental()
