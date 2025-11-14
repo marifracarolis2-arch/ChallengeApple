@@ -9,6 +9,7 @@ import Foundation
 
 func escolhaPersonagem() {
     print("Bem Vindo(a) à Luminara, a terra da magia!")
+    print("Está na hora de decidir qual personagem vai te acompanhar nesta aventura")
     print("Digite M se quer ser mulher ou digite H para homem")
     let resposta = readLine() ?? ""
     if resposta == "M" {
