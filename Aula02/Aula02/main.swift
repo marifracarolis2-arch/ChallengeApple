@@ -68,3 +68,23 @@ func explorarRegiao() {
     }
 }
 // para funcionar chame a função explorarRegiao()
+
+func inventarioArtefatos(){
+    var artefatos: [String] = []
+    print("Quantos artefatos você encontrou?")
+    let qtd = readLine()
+    if let numqtd = qtd {
+        if let quantidade = Int(numqtd) {
+            for i in 1...quantidade {
+                print("Digite o nomde do artefato \(i):")
+                let nome = readLine() ?? ""
+                artefatos.append(nome)
+            }
+            print("Seus artefatos: ")
+            for item in artefatos {
+                print("- \(item)")
+            }
+        }
+    }
+}
+// para funcionar chame a função explorarRegiao()
