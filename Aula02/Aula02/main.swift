@@ -87,4 +87,4 @@ func inventarioArtefatos(){
         }
     }
 }
-// para funcionar chame a função explorarRegiao()
+// para funcionar chame a função inventarioArtefatos()
