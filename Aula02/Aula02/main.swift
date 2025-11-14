@@ -7,6 +7,8 @@
 
 import Foundation
 
+//O nome do "jogo" é: A Jornada em Luminara! Onde um viajante(você) chega em uma terra desconhecida chamada Luminara e enfrenta escolhas pelo caminho
+
 func escolhaPersonagem() {
     print("Bem Vindo(a) à Luminara, a terra da magia!")
     print("Está na hora de decidir qual personagem vai te acompanhar nesta aventura")
