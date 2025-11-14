@@ -78,7 +78,7 @@ func inventarioArtefatos(){
     var artefatos: [String] = []
     print("Após iniciar sua aventura, você caminha pela região e acaba dando de cara com um baú lendário!!!")
     print("Dentro dele havia recompensas, artefatos que podem te ajudar na batalha")
-    print("Quantos artefatos você encontrou?")
+    print("Para guardar eles no inventário, digite quantos artefatos você encontrou?")
     let qtd = readLine()
     if let numqtd = qtd {
         if let quantidade = Int(numqtd) {
@@ -115,12 +115,16 @@ func dueloElemental() {
     print("Uma criatura \(inimigo) apareceu!!!")
     if vantagens[seu] == inimigo {
         print("Vantagem elemental!!! Você causou dano dobrado.")
+        print("Você venceu a batalha, meus parabéns!!!")
     } else if vantagens[inimigo] == seu {
         print("Desvantagem elemental!!! Seu dano foi reduzido")
+        print("Você perdeu a batalha, jogue novamente para tentar vencer... Boa sorte!!!")
     } else {
         print("Dano neutro, tente novamente!")
     }
 }
 // para funcionar chame a função dueloElemental()
+
+
 
 
