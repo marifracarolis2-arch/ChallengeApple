@@ -7,6 +7,8 @@
 
 import Foundation
 
+//O nome do "jogo" é: A Jornada em Luminara! Onde um viajante(você) chega em uma terra desconhecida chamada Luminara e enfrenta escolhas pelo caminho
+
 func escolhaPersonagem() {
     print("Bem Vindo(a) à Luminara, a terra da magia!")
     print("Está na hora de decidir qual personagem vai te acompanhar nesta aventura")
@@ -125,6 +127,37 @@ func dueloElemental() {
 }
 // para funcionar chame a função dueloElemental()
 
+func parteFinal() {
+        print("Depois de derrotar seu inimigo, outra criatura se aproxima de você")
+        print("Mas essa criatura é diferente, tem forma humana... Ela se aproxima e logo em seguida fala com você")
+        print("XiangLing - Olá, sou XiangLing, parece que você derrotou um dos meus não é mesmo?")
+        print("Oh não!!! Parece que XiangLing, a deusa mais forte de Luminara, está realmente zangada com você... Digite um número de 1 a 4 para responde-la")
+        print("1 - Olá XiangLing, não era a minha intenção machucar ninguém... Apenas me defendi")
+        print("2 - Derrotei mesmo, e vou derrotar qualquer um que chegar no meu caminho")
+        print("3 - Quem é você? Sai daqui")
+        print("4 - Me desculpa XiangLing... Me desculpa mesmo por favor não me machuque")
+        let escolha = readLine()
+        if let numesc = escolha {
+            if let numEscolha = Int(numesc) {
+                switch numEscolha {
+                case 1:
+                    print("XiangLing - Independente, derrubou um dos meus... Terei que exterminar você de Luminara!!!")
+                case 2:
+                    print("XiangLing - Se acha mesmo forte assim? Pois terá que passar por cima de mim primeiro!")
+                case 3:
+                    print("XiangLing - Como ousa debochar de mim assim??? Você sofrerá as consequências...")
+                case 4:
+                    print("XiangLing - Uma criatura tão fraca como você derrotou um dos meus?? Acabar com você será fácil então ")
+                default:
+                    print("XiangLing não entendeu o que você disse e te derrotou na mesma hora...")
+                }
+            }
+            
+            
+        
+    }
+    
+}
 
-
+// para funcionar chame a função parteFinal()
 
