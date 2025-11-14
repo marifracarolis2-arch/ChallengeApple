@@ -161,3 +161,34 @@ func parteFinal() {
 
 // para funcionar chame a função parteFinal()
 
+func batalhaXiangling() {
+    let vantagens = [
+        "Pyro" : "Cryo" ,
+        "Hydro" : "Pyro" ,
+        "Electro" : "Hydro" ,
+        "Cryo" : "Electro" ,
+        "Anemo" : "Pyro" ,
+        "Geo" : "Cryo"
+    ]
+    
+    let inimigos = ["Pyro" , "Hydro" , "Electro" , "Cryo" , "Anemo" , "Geo"]
+    let inimigo = inimigos.randomElement() ?? "Pyro"
+    print("Uma faísca de magia cai sobre você... Agora você pode escolher qual elemento usar na batalha")
+    print("Temos que atacar antes da XiangLing, rápido escolha qual elemento usar!!!")
+    print("Seu elemento será Pyro, Hydro, Electro, Anemo, Geo ou Cryo?")
+    let seu = (readLine() ?? "Pyro").capitalized
+    print("XiangLing utilizou o elemento: \(inimigo)!")
+    if vantagens[seu] == inimigo {
+        print("Vantagem elemental!!! Você causou dano dobrado.")
+        print("Você derrotou XiangLing, meus parabéns!!!")
+    } else if vantagens[inimigo] == seu {
+        print("Desvantagem elemental!!! Seu dano foi reduzido")
+        print("XiangLing derrotou você... Fim de jogo, tente jogar novamente...")
+    } else {
+        print("Dano neutro, tente novamente!")
+    }
+    
+}
+
+// para funcionar chame a função batalhaXiangling()
+
