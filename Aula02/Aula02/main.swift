@@ -21,3 +21,25 @@ func escolhaPersonagem() {
 }
 // para funcionar chame a função escolhaPersonagem()
 
+func afinidadeElemental() {
+    let elementos = [
+        "força" : "Geo(Terra)" ,
+        "calma" : "Hydro(água)" ,
+        "sabedoria" : "Electro(elétrico)" ,
+        "liberdade" : "Anemo(vento)" ,
+        "paciência" : "Pyro(fogo)" ,
+        "mistério" : "Cryo(gelo)"
+    ]
+    
+    print("Qual qualidade mais te define? Força, calma, sabedoria, liberdade, paciência ou mistério?")
+    let resposta = readLine()?.lowercased() ?? ""
+    if let elemento = elementos[resposta] {
+        print("Sua afinidade elemental é \(elemento)")
+    } else {
+        print("Nenhum elemento respondeu ao seu chamado")
+    }
+}
+// para funcionar chame a função afinidadeElemental()
+
+
+
