@@ -25,14 +25,14 @@ func escolhaPersonagem() {
 func afinidadeElemental() {
     let elementos = [
         "força" : "Geo(Terra)" ,
-        "calma" : "Hydro(água)" ,
-        "sabedoria" : "Electro(elétrico)" ,
-        "liberdade" : "Anemo(vento)" ,
-        "paciência" : "Pyro(fogo)" ,
-        "mistério" : "Cryo(gelo)"
+        "calma" : "Hydro(Água)" ,
+        "sabedoria" : "Electro(Elétrico)" ,
+        "liberdade" : "Anemo(Vento)" ,
+        "paciencia" : "Pyro(Fogo)" ,
+        "misterio" : "Cryo(Gelo)"
     ]
     print("Agora, baseado em sua característica mais marcante, veremos qual elemento você mais se identifica...")
-    print("Qual qualidade mais te define? Força, calma, sabedoria, liberdade, paciência ou mistério?")
+    print("Qual qualidade mais te define? Força, calma, sabedoria, liberdade, paciencia ou misterio?")
     let resposta = readLine()?.lowercased() ?? ""
     if let elemento = elementos[resposta] {
         print("Sua afinidade elemental é \(elemento)")
@@ -54,12 +54,16 @@ func explorarRegiao() {
             switch numEscolha {
             case 1:
                 print("Você sente uma brisa suave enquanto ouve estranhas canções vindas do céu")
+                print("Agora já está pronto(a) para iniciar a sua aventura!")
             case 2:
                 print("O calor intenso faz seu corpo brilhar como um vulcão em chamas")
+                print("Agora já está pronto(a) para iniciar a sua aventura!")
             case 3:
                 print("Águas cristalinas revelam criaturas que ali habitam")
+                print("Agora já está pronto(a) para iniciar a sua aventura!")
             case 4:
                 print("Relâmpagos sentem sua energia e dançam ao seu redor")
+                print("Agora já está pronto(a) para iniciar a sua aventura!")
             default:
                 print("Essa região não existe em Luminara")
             }
@@ -97,14 +101,16 @@ func dueloElemental() {
         "Pyro" : "Cryo" ,
         "Hydro" : "Pyro" ,
         "Electro" : "Hydro" ,
-        "Cryo" : "Electro"
+        "Cryo" : "Electro" ,
+        "Anemo" : "Pyro" ,
+        "Geo" : "Cryo"
     ]
     
-    let inimigos = ["Pyro" , "Hydro" , "Electro" , "Cryo"]
+    let inimigos = ["Pyro" , "Hydro" , "Electro" , "Cryo" , "Anemo" , "Geo"]
     let inimigo = inimigos.randomElement() ?? "Pyro"
     print("Enquanto guardava seus artefatos no inventário, você acaba tendo uma sensação estranha")
     print("Parece que um inimigo está se aproximando, temos que agir rápido!!!")
-    print("Seu elemento é Pyro, Hydro, Electro ou Cryo?")
+    print("Seu elemento é Pyro, Hydro, Electro, Anemo, Geo ou Cryo?")
     let seu = (readLine() ?? "Pyro").capitalized
     print("Uma criatura \(inimigo) apareceu!!!")
     if vantagens[seu] == inimigo {
@@ -116,6 +122,5 @@ func dueloElemental() {
     }
 }
 // para funcionar chame a função dueloElemental()
-
 
 
