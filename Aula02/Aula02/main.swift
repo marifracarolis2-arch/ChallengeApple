@@ -71,12 +71,14 @@ func explorarRegiao() {
 
 func inventarioArtefatos(){
     var artefatos: [String] = []
+    print("Você caminha pela região e acaba dando de cara com um baú lendário!!!")
+    print("Dentro dele havia recompensas, artefatos que podem te ajudar na batalha")
     print("Quantos artefatos você encontrou?")
     let qtd = readLine()
     if let numqtd = qtd {
         if let quantidade = Int(numqtd) {
             for i in 1...quantidade {
-                print("Digite o nomde do artefato \(i):")
+                print("Digite o nome do artefato \(i):")
                 let nome = readLine() ?? ""
                 artefatos.append(nome)
             }
@@ -111,3 +113,4 @@ func dueloElemental() {
     }
 }
 // para funcionar chame a função dueloElemental()
+
