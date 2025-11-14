@@ -31,7 +31,7 @@ func afinidadeElemental() {
         "paciência" : "Pyro(fogo)" ,
         "mistério" : "Cryo(gelo)"
     ]
-    
+    print("Agora, baseado em sua característica mais marcante, veremos qual elemento você mais se identifica...")
     print("Qual qualidade mais te define? Força, calma, sabedoria, liberdade, paciência ou mistério?")
     let resposta = readLine()?.lowercased() ?? ""
     if let elemento = elementos[resposta] {
@@ -114,4 +114,5 @@ func dueloElemental() {
     }
 }
 // para funcionar chame a função dueloElemental()
+
 
