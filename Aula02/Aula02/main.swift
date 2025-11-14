@@ -102,6 +102,8 @@ func dueloElemental() {
     
     let inimigos = ["Pyro" , "Hydro" , "Electro" , "Cryo"]
     let inimigo = inimigos.randomElement() ?? "Pyro"
+    print("Enquanto guardava seus artefatos no inventário, você acaba tendo uma sensação estranha")
+    print("Parece que um inimigo está se aproximando, temos que agir rápido!!!")
     print("Seu elemento é Pyro, Hydro, Electro ou Cryo?")
     let seu = (readLine() ?? "Pyro").capitalized
     print("Uma criatura \(inimigo) apareceu!!!")
