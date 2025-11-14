@@ -43,7 +43,7 @@ func afinidadeElemental() {
 // para funcionar chame a função afinidadeElemental()
 
 func explorarRegiao() {
-    print("Escolha uma região para explorar")
+    print("Escolha uma região digitando entre 1 e 4 para iniciar a sua aventura em Luminara!")
     print("1 - Vale dos ventos")
     print("2 - Penhascos flamejantes")
     print("3 - Jardins da maré")
@@ -55,7 +55,7 @@ func explorarRegiao() {
             case 1:
                 print("Você sente uma brisa suave enquanto ouve estranhas canções vindas do céu")
             case 2:
-                print("O calor intenso faz seu corpo brilhar como brisas vivas")
+                print("O calor intenso faz seu corpo brilhar como um vulcão em chamas")
             case 3:
                 print("Águas cristalinas revelam criaturas que ali habitam")
             case 4:
@@ -72,7 +72,7 @@ func explorarRegiao() {
 
 func inventarioArtefatos(){
     var artefatos: [String] = []
-    print("Você caminha pela região e acaba dando de cara com um baú lendário!!!")
+    print("Após iniciar sua aventura, você caminha pela região e acaba dando de cara com um baú lendário!!!")
     print("Dentro dele havia recompensas, artefatos que podem te ajudar na batalha")
     print("Quantos artefatos você encontrou?")
     let qtd = readLine()
@@ -114,5 +114,6 @@ func dueloElemental() {
     }
 }
 // para funcionar chame a função dueloElemental()
+
 
 
