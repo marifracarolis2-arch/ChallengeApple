@@ -41,5 +41,30 @@ func afinidadeElemental() {
 }
 // para funcionar chame a função afinidadeElemental()
 
-
-
+func explorarRegiao() {
+    print("Escolha uma região para explorar")
+    print("1 - Vale dos ventos")
+    print("2 - Penhascos flamejantes")
+    print("3 - Jardins da maré")
+    print("4 - Pico da estática")
+    let escolha = readLine()
+    if let numesc = escolha {
+        if let numEscolha = Int(numesc) {
+            switch numEscolha {
+            case 1:
+                print("Você sente uma brisa suave enquanto ouve estranhas canções vindas do céu")
+            case 2:
+                print("O calor intenso faz seu corpo brilhar como brisas vivas")
+            case 3:
+                print("Águas cristalinas revelam criaturas que ali habitam")
+            case 4:
+                print("Relâmpagos sentem sua energia e dançam ao seu redor")
+            default:
+                print("Essa região não existe em Luminara")
+            }
+        }
+        
+        
+    }
+}
+// para funcionar chame a função explorarRegiao()
